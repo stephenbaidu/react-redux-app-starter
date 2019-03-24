@@ -1,0 +1,91 @@
+.Model {
+  padding: 10px;
+
+  :global {
+    .card {
+      border-radius: 0px;
+      border: solid #f8f9fa;
+    }
+
+    .small-gutters {
+      margin-right: -6px;
+      margin-left: -6px;
+      > [class*="col-"] {
+        padding-right: 6px;
+        padding-left: 6px;
+      }
+    }
+
+    .breadcrumb {
+      padding: .5rem 1rem;
+    }
+  }
+}
+
+.Navbar {
+  margin-bottom: 10px;
+}
+
+.Card {
+  border-radius: 0px;
+  border: solid #f8f9fa;
+}
+
+.ModelIndex {
+  padding: 1px;
+
+  table tr {
+    cursor: pointer;
+  }
+
+  :global {
+    .table-sm td, .table-sm th {
+      padding: .4rem;
+    }
+  }
+}
+
+.ModelNew {
+  padding: 15px;
+}
+
+.ModelShow {
+  padding: 15px;
+}
+
+.ModelForm {
+  Label {
+    font-weight: 400;
+  }
+  Input[readOnly] {
+    border: 0px;
+    padding: 9px;
+    background-color: #e9ecef59;
+  }
+
+  :global {
+    .form-control {
+      height: calc(1.5em + .5rem + 10px) !important;
+    }
+    .select-input > div {
+      height: 39px;
+    }
+    .select-input > div:focus {
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid rgba(81, 203, 238, 1);
+    }
+  }
+}
+
+.Toolbar {
+}
+
+.RightToolbar {
+  float: right;
+}
+
+.Searchbar {
+  margin-bottom: 10px;
+}

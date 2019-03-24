@@ -1,26 +1,52 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+
+import Signin from './modules/Auth/Signin';
+import Signup from './modules/Auth/Signup';
+import Shops from './modules/App/Shops';
+import Admin from './modules/Admin/Admin';
+import Billing from './modules/Billing/Billing';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faTachometerAlt,
+  faCogs,
+  faChartBar,
+  faChevronRight,
+  faPlus,
+  faSearch,
+  faSave,
+  faTimes,
+  faPencilAlt,
+  faTrash,
+  faFile
+} from '@fortawesome/free-solid-svg-icons';
+import './App.scss';
+
+library.add(
+  faTachometerAlt,
+  faCogs,
+  faChartBar,
+  faChevronRight,
+  faPlus,
+  faSearch,
+  faSave,
+  faTimes,
+  faPencilAlt,
+  faTrash,
+  faFile
+);
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Switch>
+        <Route path="/signin" component={ () => <Signin authRedirectPath='/' /> } />
+        <Route path="/signup" component={ () => <Signup authRedirectPath='/' /> } />
+        <Route path="/admin" component={ Admin } />
+        <Route path="/billing" component={ Billing } />
+        <Route path="/" component={ Shops } />
+      </Switch>
     );
   }
 }

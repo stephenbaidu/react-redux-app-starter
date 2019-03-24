@@ -1,0 +1,19 @@
+.Navbar {
+  height: 55px;
+  z-index: 9999;
+  box-shadow: 0 0 .3rem rgba(0,0,0,.15) !important;
+}
+
+.NavbarBrand {
+  width: 170px;
+  height: 40px;
+
+  img {
+    height: 38px;
+    box-shadow: 10px 5px 26px 0 rgba(0,0,0,.25);
+  }
+}
+
+.NavItem {
+  margin-top: 3px;
+}

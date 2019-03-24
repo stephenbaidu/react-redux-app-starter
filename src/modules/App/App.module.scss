@@ -1,0 +1,13 @@
+.Shops {}
+
+.ShopSelector {
+  text-align: center;
+  margin-top: 70px;
+  height: 100%;
+  padding: 15px;
+  overflow: auto;
+
+  a, a:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,34 @@
+.Sidebar {
+  font-size: 1rem;
+  margin-bottom: 100px;
+}
+
+.SidebarHeading {
+  font-size: .75rem;
+  text-transform: uppercase;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  padding-left: .5rem !important;
+  margin-top: 1rem;
+  color: #6c757d !important;
+}
+
+.SidebarLink {
+  font-weight: 450;
+  color: #333;
+  padding: .2rem 1rem;
+
+  :hover {
+    color: #88a0b9;
+  }
+
+  svg {
+    margin-right: 4px;
+    color: #999;
+    width: 16px !important;
+  }
+}

@@ -1,0 +1,40 @@
+.Sidebar {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  margin-top: 0px;
+  left: 0;
+  background-color: #f8f9fa !important;
+  padding: 0px;
+  box-sizing: border-box;
+  border-right: 2px dotted #eee;
+  overflow: auto;
+}
+
+.Content {
+  margin-top: 55px;
+  margin-left: 60px;
+  height: 100%;
+  padding: 0px;
+  overflow: auto;
+}
+
+@media (min-width: 576px) and (min-width: 768px) {
+  .Sidebar {
+    width: 90px;
+  }
+
+  .Content {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 1200px) {
+  .Sidebar {
+    width: 200px;
+  }
+
+  .Content {
+    margin-left: 200px;
+  }
+}
